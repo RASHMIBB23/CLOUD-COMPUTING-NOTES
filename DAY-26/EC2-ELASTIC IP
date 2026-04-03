@@ -1,0 +1,5 @@
+* when instances start the public ip address will start and the public ip adress starts and the private ip adress stops.
+* DEFINITION :  ELASTIC IPS ARE STATIC ,PUBLIC IP4 adress associated with AWS accounts and can be attached to instances to provide persistent public IP adress.
+* PURPOSE    :  
+* BILLING    :  Elastic ips are free in use ,but AWS charges for unused EPS.
+* RESILIENCE : 
