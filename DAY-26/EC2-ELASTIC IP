@@ -2,4 +2,11 @@
 * DEFINITION :  ELASTIC IPS ARE STATIC ,PUBLIC IP4 adress associated with AWS accounts and can be attached to instances to provide persistent public IP adress.
 * PURPOSE    :  
 * BILLING    :  Elastic ips are free in use ,but AWS charges for unused EPS.
-* RESILIENCE : 
+* RESILIENCE :  
+* when ever the instances is topped there public ip get erased so when when we attach the ealstivc ip adress then we can start the same instance with the same public adress so that th information does n't get losted
+* so that the DNS ,client ,APIS wont break.
+* EIPS ARE RGION SPEICIFIC.
+
+* Elastic IP Address (EIP) is a fixed public IPv4 address in AWS that you can keep and reattach to your EC2 instances, even if they are stopped or restarted.
+* open the elastic ip adress if the Elastic ip adress is we have to connect it the 
+
