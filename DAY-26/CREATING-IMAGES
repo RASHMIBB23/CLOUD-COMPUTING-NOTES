@@ -1,0 +1,5 @@
+HOW TO CREATE THE IMAGES:
+* go to instances-> start instances->actions-> images and templates-> create image -> name-> demo -> and create image-> go for AMI -> u will see images over there -> then lauch instance from AMI -> select existing groups-->8gb ->launch instance.->click on created green color ->Then ngnix got created -> 
+
+* why ngnix is alreadt there because it was in AMI.
+* AMI was from the server ,took the backup of it

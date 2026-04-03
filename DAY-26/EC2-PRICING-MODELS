@@ -1,0 +1,78 @@
+EC2 -PRICING MODELS
+
+- WHenever you want the ec2 instance service you use u launch the instance and when you dont want you dlet the instances.
+- RESERVED INSTANCES : WHEN YOU WANT TO want the instance sfor a year u reserve it u get the instance discount 50% in according to the on demand -service.
+- SPOT INSTANCES : purchase unsed EC2 capacity at the discount rates,ideal for facult-torelaant workloads.
+- SAVINGS PLANS : Flexible pricing model offering loweer prices on EC2 based on long -term uagae.
+- Differenced Between Dedidcated Hosts and dedidcated INstances:
+
+- Dedidcated Hosts: Give you control over the entire physicsl server and allow you to use software liceses tied to the servers harware.
+
+---
+
+- SECURITY PRACTISES:
+
+---
+
+- use of iam s for the ec2 instances creation insead of using the hardcore crendentials.
+
+- regularly patch and update the ur ec2 isntances.
+- EX:--sudo-apt-update and sudo-apt upgrade.
+
+- enabling the detailed monitoring for the better performance nad usage.
+- EX:--ENBLING THE CLOUD WATCH Detailed MONITORING ON A EC2 INSTANCES.
+
+- IMplement a VPC(VIRTUAL PRIVATE CLOUD) with the security groups and nwtwok ACLS to control access.
+- vpc= security groups\_ netwok acls for the access control.
+
+---
+
+creating new images and from running instances - hands on
+
+AMI - backup from the os level
+snapshot - only backup of volume.
+
+AMI (Amazon Machine Image)
+
+Simple line: AMI is a full backup of the instance at the OS level.
+Example: You configure an EC2 with Ubuntu, install Apache, MySQL, and your app. Then you create an AMI. Later, you can launch new EC2 instances from this AMI, and they’ll have the same OS, software, and configuration already set up.
+
+Snapshot
+
+Simple line: Snapshot is a backup of the volume (storage) only.
+Example: Your EC2 has an EBS volume storing a database. You take a snapshot of that volume. If something goes wrong, you can restore the volume from the snapshot, but it won’t include the OS or instance configuration — just the data stored in that disk.
+
+---
+
+HOW TO CREATE THE IMAGES:
+
+- go to instances-> start instances->actions-> images and templates-> create image -> name-> demo -> and create image-> go for AMI -> u will see images over there -> then lauch instance from AMI -> select existing groups-->8gb ->launch instance.->click on created green color ->Then ngnix got created ->
+
+- why ngnix is alreadt there because it was in AMI.
+- AMI was from the server ,took the backup of it
+
+---
+
+## HOW TO START THE NGNIX
+
+- START THE NGINX
+- in netwrok section inbound section make it http + anywhere
+- again https+ anywhere
+- connect
+- take that ssh key
+- paste in the cmd
+- write the commnds to install inginx
+- sudo yum update -y
+  sudo yum install nginx -y
+  sudo systemctl start nginx
+  sudo systemctl enable nginx
+  sudo systemctl status nginx
+- now paste the public ip adress in the web server
+- then boom enjoy
+
+---
+
+## HOW TO OPEN THE NGNIX PAGE BY HTML PAGE:
+
+- cd /usr/share/nginx/html
+- sudo nano index.html

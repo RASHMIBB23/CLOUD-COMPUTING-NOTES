@@ -1,0 +1,22 @@
+---------------------------------------------------
+HOW TO START THE NGNIX
+-------------------------------------------------
+* START THE NGINX
+* in netwrok section inbound section make it http + anywhere
+* again https+ anywhere 
+* connect 
+* take that ssh key 
+* paste in the cmd
+* write the commnds to install inginx
+* sudo yum update -y
+sudo yum install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl status nginx
+* now paste the public ip adress in the web server 
+* then boom enjoy
+-----------------------------------------------
+HOW TO OPEN THE NGNIX PAGE BY HTML PAGE:
+---------------------------------------------------
+* cd /usr/share/nginx/html
+* sudo nano index.html
