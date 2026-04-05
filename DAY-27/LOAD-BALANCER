@@ -1,1 +1,84 @@
-!
+!when ithere is single ip adress and when all the user go and acess to it 
+* supooose 50 person go and access to it 
+* so suddeenly it as been increased to 500 users
+* then the ip  adress may slow down in ,
+t3 micro (it is a server ) is handling multiple users.
+*  SCALING : VERTICAL
+           : HORZONTAL 
+* t3.mic ro --> t3 large to 
+* two types of VERTICAL SCALING 
+* HORIZONTAL SCALING.
+--------------------------------------------------
+
+LOAD-BALANCER 
+* load balancer is a technology :
+* where it spread th eincoming traffic into different server so that the no single server gets overloaded.
+-------------------------------------------------
+KEY FEATURES:
+--------------------------------------------------
+* Distributes Traffic: IT helps spread ttafiic evenly across a pool of instances or servers, improving overall system performnace.
+* HIgh Availabity: By routing traffic to healty instances, load balnces help ,aintain system uptime and minimize downtime.
+* Session Persistence : some load balancers can stcik user seeeions to a particular instance (session affinity ) to maintain user experrience.
+------------------------------------------------
+TYPES OF LOAD BALANCER
+-----------------------------------------------
+1) APPLICATION LOAD BALANCER:
+* Works at the layer 7 (application layer)
+* Handles the http and https traffic flow
+* smart routing : can send request based on the routing url ,headers and cookies.
+* best used for : WEBSITE ,APLs, microservices.
+
+
+2) NetwoRK LAOD BALANCER (NLB)
+* works at the layer 4 (transport layer) 
+* handles TCP,UDP,TSL traffic.
+* Extremely fast and designed for millions of request per secound.
+* Best for high -peformance apps,gaming or real-time sytems.
+
+
+3) Gatway LOAD BALANCER (GWLAB)
+* special type network appliances (like firewalls ,intrusion detection,or security tools)
+lets you insert and scale third-party security services easily.
+* Best for the security and traffic flows.
+---------------------------------------------------------------------
+ALB → Smart web traffic routing.
+
+NLB → Super fast transport traffic handling.
+
+GWLB → Security and inspection traffic management.
+----------------------------------------------------------------------
+
+LAUNCH 2EC2 amazon-linux:
+----------------------------------------------------------------------
+install httpd on both server 
+* launch instances and do the commands so that it runs and works perfectly .
+* sudo yum install -y httpd
+* sudo systemctl start httpd
+* sudo systemctl enable httpd
+
+--on bothe the instances.
+echo "<h1> this is web server </h1> " | sudo tee /var/www/html/index.html
+* we are selecting single server one by one 
+* so we have to select the scaling target group.
+* people outside will go for port number 80 ...where the traffic should  be going to the servers.
+--------------------------------------------------------------------
+CREATING THE LOAD BALANCER 
+---------------------------------------------------------------------
+* click on the load balancer 
+* slect the groups 
+* click on the targert groups.
+* inculde the previous tags.
+* click on the next 
+* creat the load balnce 
+* this mack sure the incoming traffic  
+* after creating the load balancer 
+* we will get the DNS name 
+* after creating the target groups.
+* then click it on the load balancer and select that.
+----------------------------------------------------------------------
+IN LOAD BALANCER IT WILL CREATE THE DNS ADRESS.
+----------------------------------------------------------------------
+
+clASS10AM-368283038.ap-south-1.elb.amazonaws.
+* then check in the resource map.
+* 
