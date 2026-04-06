@@ -81,4 +81,22 @@ IN LOAD BALANCER IT WILL CREATE THE DNS ADRESS.
 
 clASS10AM-368283038.ap-south-1.elb.amazonaws.
 * then check in the resource map.
+* then check th security groups are healty or not.
+* if they are not healty wait until then.
+Click on dns thing in the https and make it as running
+
+
+
+
+-------------------------------------------------------------------
+* CREATING THE instances
+* OPEN THE CONSOLE IN ONE ONE CONSOLE AND RUN THE COMMANDS 
+* RUN THE HTTPS IT WILL RUN .
+* LOAD balancers
+* CREATE THE SECURITY GROUPS AS THE HTTP ,RDP, SSH
+* CREAT THE TARGET GROUPS.
+* CREATE THE ROUTE MAP.
+* WAIT TILL IT WILL BEcOME ACTIVE.
+* TAJE THE DNS Link AND PUT FOR THE HTTP 
+* click on it it one it will show 
 * 

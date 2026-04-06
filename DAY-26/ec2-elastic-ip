@@ -9,4 +9,7 @@
 
 * Elastic IP Address (EIP) is a fixed public IPv4 address in AWS that you can keep and reattach to your EC2 instances, even if they are stopped or restarted.
 * open the elastic ip adress if the Elastic ip adress is we have to connect it the 
+-----------------------------------------------
 
+constant ip which doesn't change even when change and stop the server.
+-------------------------------------------------
