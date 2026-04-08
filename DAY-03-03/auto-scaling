@@ -1,0 +1,18 @@
+auto scaling there are two type 
+ * vertical scalinhg(going the server from t3.micro -> t3.macro).
+ * horizontal scaling(we have create the auto -scaling group )
+ * after this one server should be added
+ * after this we have
+ * when ever u creathe one server in the auto-scaling it goes and jooins the target -group
+ * if it go more then the 60% based on that u can launch more servers.
+ * after connecting 
+ * select the instances 
+ * go for the monitoring 
+ * select that 
+ * change the timings above 
+ * after that desired cqapapcity will come automatically
+ ---------------------------------------------------------------------------------------------------------------------------------
+
+ * go for the  routr 53
+ * come down to the domains
+ 
