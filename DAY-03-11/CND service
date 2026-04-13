@@ -16,4 +16,16 @@ USE CASE: IT is ideal for delivering static files like html ,css,js ,images,and 
 
 Edge locations: Global data centers where content is cahed.
 Distributions: The cloudfront resource that tells how content will be delivered.
-Origins: The locations of your content (e.g ,S3)
+Origins: The locations of your content (e.g ,S3 buckets or web service)
+=========================================================================
+
+# SETTING UP A DEMO
+
+- it delivers the data globally with low latency and high transfer speeds.
+  delevers the data with low latency and high transfer speeds.
+- IT cahes content at edge locations close to users.
+
+USE CASE: it is ideal
+when the website is hoster in broswer
+
+- it takes the image from s3 bucket and move to the and after that it moves to the dge server and shows the content and after some time when u need to see again it shwos from the egde server not from the origin server so u can easily access the content
