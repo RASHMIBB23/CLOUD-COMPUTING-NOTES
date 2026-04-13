@@ -1,0 +1,35 @@
+📖 What IAM Is
+Core security service in AWS.
+
+Manages users, groups, roles, and policies.
+
+Ensures the right people and applications have the right level of access.
+
+🎯 Why IAM Is Used
+Authentication → Verify who is trying to access AWS (user, app, service).
+
+Authorization → Decide what they can do (read, write, delete, etc.).
+
+Granular control → Apply least privilege (give only the permissions needed).
+
+Security compliance → Enforce MFA, password policies, and access boundaries.
+
+Scalability → Manage permissions across large teams and multiple accounts.
+
+🌍 Where IAM Is Used
+Users & Groups → Human accounts (developers, admins).
+
+Roles → Temporary access for applications, services, or cross-account access.
+
+Policies → JSON documents that define permissions (Allow/Deny).
+
+Federation → Integrate with external identity providers (Google, Microsoft AD, etc.).
+
+⚡ Example Scenario
+You’re hosting a static website on S3 + CloudFront:
+
+IAM ensures only you (admin) can upload files to the S3 bucket.
+
+A bucket policy allows the public to read files (view the website).
+
+CloudFront uses an IAM role to fetch content securely from S3
