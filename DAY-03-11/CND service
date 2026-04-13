@@ -2,4 +2,18 @@ what is CND
 
 ## content deleivery network.
 
-- to perform the speed of the website we have the keycdn
+- to perform the speed of the website we have the keycn.
+
+* what is cloudfront?
+  -> aws cloudfront is a delivery network (cdn) service that delivers content globally with low latency and hight transfer speeds. it cahes content at edge locations close to users.
+
+USE CASE: IT is ideal for delivering static files like html ,css,js ,images,and videos.
+\*it also used apis or dynamic content with customizable caching.
+
+---
+
+## KEY CONCEPTS-
+
+Edge locations: Global data centers where content is cahed.
+Distributions: The cloudfront resource that tells how content will be delivered.
+Origins: The locations of your content (e.g ,S3)
